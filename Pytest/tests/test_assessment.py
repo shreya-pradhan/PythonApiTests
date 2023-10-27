@@ -4,7 +4,7 @@ import requests
 @pytest.fixture
 def login_token():
     url ='https://practice.expandtesting.com/notes/api/users/login'
-    myobj = {"email":"shreya19.sp@gmail.com","password":"Test123$"}
+    myobj = {"email":"username","password":"password$"}
 
     response = requests.post(url, json = myobj)
     body =response.json()
